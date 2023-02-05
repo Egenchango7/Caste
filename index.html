@@ -2,26 +2,39 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresa de Transporte Privado</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
       /* Estilos CSS */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       body {
         font-family: Arial, sans-serif;
         background-color: #f2f2f2;
       }
-      header {
+      .container {
+        max-width: 1200px;
+        margin: 40px auto;
         text-align: center;
-        padding: 40px;
+      }
+      header {
         background-color: #333;
         color: white;
+        padding: 40px 0;
       }
       header h1 {
         margin: 0;
       }
       section {
-        width: 80%;
-        margin: 40px auto;
-        text-align: center;
+        margin-top: 80px;
+      }
+      section h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
       }
       section p {
         font-size: 18px;
@@ -40,15 +53,27 @@
   <body>
     <!-- Encabezado -->
     <header>
-      <h1>Empresa de Transporte Privado</h1>
+      <div class="container">
+        <h1>Empresa de Transporte Privado</h1>
+      </div>
     </header>
     
     <!-- Contenido principal -->
     <section>
-      <h2>Bienvenido a nuestra empresa</h2>
-      <p>Ofrecemos servicios de transporte privado confiable y cómodo a precios asequibles. Con nuestros vehículos de alta calidad y nuestro equipo de conductores profesionales, garantizamos un viaje seguro y sin complicaciones.</p>
-      <p>Contáctanos para reservar tu viaje o obtener más información.</p>
-      <button class="btn">Contáctanos</button>
+      <div class="container">
+        <h2>Bienvenido a nuestra empresa</h2>
+        <p>Ofrecemos servicios de transporte privado confiable y cómodo a precios asequibles. Con nuestros vehículos de alta calidad y nuestro equipo de conductores profesionales, garantizamos un viaje seguro y sin complicaciones.</p>
+        <p>Contáctanos para reservar tu viaje o obtener más información.</p>
+        <button class="btn">Contáctanos</button>
+      </div>
     </section>
-  </body>
-</html>
+    
+    <!-- JavaScript (opcional) -->
+    <script>
+      // Funcionalidad del botón de contacto
+      const btn = document.querySelector('.btn');
+      btn.addEventListener('click', function() {
+        alert('Gracias por contactar a nuestra empresa.');
+      });
+   
+
